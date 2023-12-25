@@ -1,4 +1,4 @@
-# Credits By neurs
+# Timeout
 $i = 99999
 do {
     Write-Host $i
