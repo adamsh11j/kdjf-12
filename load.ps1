@@ -1,1 +1,1 @@
-echo nothing to install
+choco install steam -y
