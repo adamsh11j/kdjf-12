@@ -23,7 +23,7 @@ jobs:
     - name: CRD
       run: ${{ github.event.inputs.authcode }} -pin=${{ github.event.inputs.pincode }}
     - name: Install depends
-      run: ./load.ps1
+      run: Start-Process powershell -ArgumentList "-ExecutionPolicy Bypass -File .\load.ps1" -Verb RunAs
     - name: Timeout
       run: ./timeout.ps1
       env:
